@@ -6,7 +6,7 @@ See http://scikit-image.org/docs/dev/auto_examples/plot_blob.html#example-plot-b
 
 ... for the basis of the approach.
 
-Default uses the Difference of Hessians (doh), which is pretty fast. For a given image, you may have to tweak threshold, num_sigma, and max_sigma in the blob_doh call to get good performance. 
+Default uses the Determinant of Hessians (doh), which is pretty fast. For a given image, you may have to tweak threshold, num_sigma, and max_sigma in the blob_doh call to get good performance. 
 
 BE CAREFUL as if you set threshold too low you can quickly consume all free memory.
 
