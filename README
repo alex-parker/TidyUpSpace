@@ -1,0 +1,17 @@
+tidy.py: a simple script to organize objects in images of space by their size.
+
+Pretty crude at this point. Requires scikit-image; performs blob-finding.
+
+See http://scikit-image.org/docs/dev/auto_examples/plot_blob.html#example-plot-blob-py
+
+... for the basis of the approach.
+
+Default uses the Difference of Hessians (doh), which is pretty fast. For a given image, you may have to tweak threshold, num_sigma, and max_sigma in the blob_doh call to get good performance. 
+
+BE CAREFUL as if you set threshold too low you can quickly consume all free memory.
+
+Try it!
+
+python tidy.py HUDF.jpg
+
+result: tidied_HUDF.png
