@@ -5,8 +5,9 @@ from math import sqrt, floor, ceil
 from skimage.color import rgb2gray
 from skimage import novice
 import numpy
+import sys
 
-fn = 'NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg'
+fn = sys.argv[1]
 
 image = novice.open(fn).rgb
 image_gray = rgb2gray(image)
